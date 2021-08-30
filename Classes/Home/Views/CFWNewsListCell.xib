@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="122" id="KGk-i7-Jjw" customClass="CFWNewsListCell" customModule="CFW_iOS_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nopic_2" translatesAutoresizingMaskIntoConstraints="NO" id="VLy-Rj-aOS">
+                        <rect key="frame" x="160.5" y="16" width="143.5" height="98"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="VLy-Rj-aOS" secondAttribute="height" multiplier="110:75" id="3sM-kG-hQU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="封顶大吉丨匠心精筑，天盛·汇金时代全面封顶！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42x-jQ-Esq">
+                        <rect key="frame" x="16" y="17" width="136.5" height="41"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.066666666666666666" green="0.10980392156862745" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-06-23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRP-3t-lNb">
+                        <rect key="frame" x="16" y="98" width="134.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" systemColor="systemGray3Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VLy-Rj-aOS" firstAttribute="top" secondItem="42x-jQ-Esq" secondAttribute="top" constant="-1" id="0vc-Ry-Wje"/>
+                    <constraint firstItem="VLy-Rj-aOS" firstAttribute="leading" secondItem="42x-jQ-Esq" secondAttribute="trailing" constant="8" id="11S-xU-cbJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VLy-Rj-aOS" secondAttribute="trailing" id="2Ff-a3-RZn"/>
+                    <constraint firstItem="DRP-3t-lNb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="8EF-vA-XN6"/>
+                    <constraint firstItem="VLy-Rj-aOS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="CDM-XJ-bjB"/>
+                    <constraint firstItem="VLy-Rj-aOS" firstAttribute="leading" secondItem="DRP-3t-lNb" secondAttribute="trailing" constant="10" id="JVh-ad-Hj3"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="VLy-Rj-aOS" secondAttribute="bottom" constant="-3" id="YmP-ku-Jng"/>
+                    <constraint firstItem="VLy-Rj-aOS" firstAttribute="bottom" secondItem="DRP-3t-lNb" secondAttribute="bottom" id="dTJ-fA-JD8"/>
+                    <constraint firstItem="42x-jQ-Esq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="iVK-8e-g6X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="coverImage" destination="VLy-Rj-aOS" id="g8b-vo-PgD"/>
+                <outlet property="timeLabel" destination="DRP-3t-lNb" id="9uy-fO-Pz1"/>
+                <outlet property="titleLabel" destination="42x-jQ-Esq" id="AH3-sJ-hWl"/>
+            </connections>
+            <point key="canvasLocation" x="76.811594202898561" y="84.375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="nopic_2" width="357.5" height="267"/>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
